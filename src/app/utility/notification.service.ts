@@ -11,4 +11,16 @@ export class NotificationService {
   showSuccess(message, title){
   	this.toastr.success(message, title)
   }
+
+  showSuccessWithTimeout(message, title, timespan){
+    this.toastr.success(message, title ,{
+      timeOut : timespan
+    })
+  }
+
+  showHTMLMessage(message, title){
+    this.toastr.success(message, title, {
+      enableHtml : true
+    })
+  }
 }

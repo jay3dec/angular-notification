@@ -18,4 +18,12 @@ export class RootComponent implements OnInit {
   	this.notifyService.showSuccess("Data shown successfully !!", "Notification")
   }
 
+  showToasterWithTimeout(){
+    this.notifyService.showSuccessWithTimeout("Data shown successfully !!", "Notification", 1000)
+  }
+
+  showHtmlToaster(){
+    this.notifyService.showHTMLMessage("<h2>Data shown successfully !!</h2>", "Notification")
+  }
+
 }
